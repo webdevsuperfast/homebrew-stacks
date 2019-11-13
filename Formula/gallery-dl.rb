@@ -3,8 +3,8 @@ class GalleryDl < Formula
 
   desc "Command-line program to download image-galleries and -collections from several image hosting sites"
   homepage "https://github.com/mikf/gallery-dl"
-  url "https://github.com/mikf/gallery-dl/archive/v1.10.4.tar.gz"
-  sha256 "1d45950751f52d8ec8e8e64dc4834e260118ee6d9cf23d87bf21b92128ca3d30"
+  url "https://github.com/mikf/gallery-dl/archive/v1.11.1.tar.gz"
+  sha256 "f6e1c770d85e2179b80cc97a7aafe2c30441f4a7dcc91312613a4c2bdc9d3953"
   head "https://github.com/mikf/gallery-dl.git"
 
   depends_on "python" => :recommended
