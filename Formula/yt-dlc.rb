@@ -1,4 +1,4 @@
-class YoutubeDlc < Formula
+class YtDlc < Formula
   include Language::Python::Virtualenv
 
   desc "Media downloader for various sites"
@@ -28,8 +28,8 @@ class YoutubeDlc < Formula
 
   test do
     # commit history of homebrew-core repo
-    system "#{bin}/youtube-dlc", "--simulate", "https://www.youtube.com/watch?v=pOtd1cbOP7k"
+    system "#{bin}/yt-dlc", "--simulate", "https://www.youtube.com/watch?v=pOtd1cbOP7k"
     # homebrew playlist
-    system "#{bin}/youtube-dlc", "--simulate", "--yes-playlist", "https://www.youtube.com/watch?v=pOtd1cbOP7k&list=PLMsZ739TZDoLj9u_nob8jBKSC-mZb0Nhj"
+    system "#{bin}/yt-dlc", "--simulate", "--yes-playlist", "https://www.youtube.com/watch?v=pOtd1cbOP7k&list=PLMsZ739TZDoLj9u_nob8jBKSC-mZb0Nhj"
   end
 end
