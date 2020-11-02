@@ -1,12 +1,12 @@
-class YtDlc < Formula
+class YoutubeDlc < Formula
   include Language::Python::Virtualenv
 
   desc "Media downloader for various sites"
   homepage "https://github.com/blackjack4494/yt-dlc"
   url "https://github.com/blackjack4494/yt-dlc/archive/2020.10.31.tar.gz"
   sha256 "0d23cc2e2f1cc7291e5d2a468b1cd282a6be228a215df188aaecae8951ac64d9"
-  head "https://github.com/blackjack4494/yt-dlc.git"
   license "Unlicense"
+  head "https://github.com/blackjack4494/yt-dlc.git"
 
   livecheck do
     url "https://github.com/blackjack4494/yt-dlc/releases/latest"
@@ -28,8 +28,8 @@ class YtDlc < Formula
 
   test do
     # commit history of homebrew-core repo
-    system "#{bin}/yt-dlc", "--simulate", "https://www.youtube.com/watch?v=pOtd1cbOP7k"
+    system "#{bin}/youtube-dlc", "--simulate", "https://www.youtube.com/watch?v=pOtd1cbOP7k"
     # homebrew playlist
-    system "#{bin}/yt-dlc", "--simulate", "--yes-playlist", "https://www.youtube.com/watch?v=pOtd1cbOP7k&list=PLMsZ739TZDoLj9u_nob8jBKSC-mZb0Nhj"
+    system "#{bin}/youtube-dlc", "--simulate", "--yes-playlist", "https://www.youtube.com/watch?v=pOtd1cbOP7k&list=PLMsZ739TZDoLj9u_nob8jBKSC-mZb0Nhj"
   end
 end

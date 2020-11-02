@@ -9,7 +9,7 @@ $ brew tap webdevsuperfast/stacks
 ## Installing Formulae from Homebrew Stacks
 ```
 $ brew install gallery-dl
-$ brew install yt-dlc
+$ brew install youtube-dlc
 ```
 
 ## List of available formulae
