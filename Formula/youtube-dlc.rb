@@ -5,15 +5,12 @@ class YoutubeDlc < Formula
   homepage "https://github.com/blackjack4494/yt-dlc"
   url "https://github.com/blackjack4494/yt-dlc/archive/2020.10.31.tar.gz"
   sha256 "0d23cc2e2f1cc7291e5d2a468b1cd282a6be228a215df188aaecae8951ac64d9"
+  head "https://github.com/blackjack4494/yt-dlc.git"
   license "Unlicense"
 
   livecheck do
     url "https://github.com/blackjack4494/yt-dlc/releases/latest"
     regex(%r{href=.*?/tag/v?(\d+(?:\.\d+)+)["' >]}i)
-  end
-
-  head do
-    url "https://github.com/blackjack4494/yt-dlc.git"
   end
 
   bottle do
